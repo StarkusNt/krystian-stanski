@@ -1,25 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
+    
     <title>Krystian Stański</title>
     <meta
       name="description"
       content="High-performance HTML based website template."
     />
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+.liga{
+    text-align: center;
+}
+.chudy{
+    text-align: center;
+}
+.header {
+    background-color: #333;
+    color: #78ce32;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px; 
+
+}
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.naglowek{
+    background-color: rgb(92, 218, 159);
+    border-radius: 15px; 
+    padding: 20px; 
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.glowna{
+    display: grid;
+    background-color: #a7dd74;;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+h1,h3 {
+    margin: 0;
+    text-align: center;
+}
+p {
+  margin: 10px;
+  text-align: center;
+}
+
+
+.prawa {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+.lewa{
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.rozgrzewka{
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #55d6ab;    
+      margin-bottom: 40px;  
+}
+.poradnik{
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #55d6ab;
+      margin-bottom: 40px;    
+}
+.bramka{
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #55d6ab;
+      margin-bottom: 40px;     
+}
+
+ul {
+    list-style-type: square;      
+}
+table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+  </style>
   </head>
   <body>
-    <h1>
-      Krystian Stański
-    </h1>
-    <p>Dzień dobry, cześć!</p>
+    <div class = "liga"><img src="img/liga_wielkich_chlopow.jpg" alt=""></div>
+    <div class = "header">  
+      <h1>Liga Wielkich Chłopów - Magazyn codzienny</h1>
+    </div>
+  <div class="naglowek">
+    <nav>
+      <a href="#">Strona Główna</a>
+      <a href="#">Aktualności</a>
+      <a href="#">Tabela</a>
+      <a href="#">Kontakt</a>
+  </nav>
+  </div>
+  <div class = "glowna">
+    <div class="lewa">
+      <div class="rozgrzewka">
+        <h3>Dlaczego rozgrzewka to wymysł słabych?</h3>
+        <p>Pomimo powszechnego przekonania, rozgrzewka jest niczym więcej niż stratą czasu i energii. Zamiast przygotować ciało do wysiłku, jedynie opóźnia rozpoczęcie rzeczywistej aktywności, a tym samym ogranicza czas na efektywne treningi. Niektórzy twierdzą, że kontuzje to jedynie wymysł branży fitness, a brak rozgrzewki jedynie testuje prawdziwą wytrzymałość organizmu. W rzeczywistości, to raczej chwilowy dyskomfort niż rozgrzewka przynosi najwięcej korzyści, a więc warto zastanowić się, czy czasem nie lepiej odpuścić tego typu rutyny.</p>
+      </div>
+      <div class="poradnik">
+        <h3>Poradnik dla początkujących - pierwszy cykl sterydowy</h3>
+        <p>Jako młody adept sportów siłowych powinieneś wiedziec, że na sucho trawa nie rośnie, stąd kazdy szanujący się wielki chłop zażywa odpowiednie środki by siać postrach wśród chudych szczurów. Najważniejsze, żeby zażyć kontrolną dawkę teścia czyli 100mg co 10 dni by już odczuć pierwsze efekty. Natomiast jest to tylko początek i powinniśmy od razu po dwutygodniowej kuracji dorzucić setkę oxandrolonu oraz 50 mg boldka dla siły w martwym ciągu. Natomiast bomba to nie wszystko. Pamiętajmy, żeby jeść codziennie kilo kurczaka z ryżem na biceps, bo z brzucha nie ma pozytku, a biceps jest naszą wizytówką.</p>
+      </div>
+      <div class="bramka">
+        <h3>OFERTY PRACY NA BRAMCE</h3>
+        <ul>
+          <li><b>Bramkarz z doświadczeniem - Apartamentowce w Śródmieściu:</b>
+            Poszukujemy doświadczonego bramkarza/ki do obsługi nowoczesnych apartamentowców w centrum Warszawy. Obowiązki obejmują nadzór nad wejściem, monitorowanie bezpieczeństwa oraz udzielanie informacji mieszkańcom. Wymagana znajomość języka angielskiego.</li>
+            <p></p>
+          <li><b>Ochroniarz/ka na Terenach Przemysłowych - Wawer:</b>
+            Dynamiczna firma poszukuje ochroniarza/ki do pracy na terenach przemysłowych w dzielnicy Wawer. Osoba zatrudniona będzie odpowiedzialna za kontrolę dostępu, patrolowanie obszaru oraz współpracę z pracownikami i dostawcami..</li>
+            <p></p>
+          <li><b>Bramkarz/ka w Luksusowym Klubie Fitness - Mokotów:</b>
+            Ekskluzywny klub fitness poszukuje energicznej osoby na stanowisko bramkarza/ki. Obowiązki obejmują przyjmowanie klientów, kontrolę wejść, udzielanie informacji na temat klubu oraz zapewnienie pozytywnej atmosfery.</li>
+            <p></p>
+          <li><b>Kierownik Bezpieczeństwa i Ego na Bramie Siłowni</b>
+            Czy twoje mięśnie mają swoje własne mięśnie? Czy uważasz, że trening to nie tylko fizyczna, ale i duchowa podróż? Jeśli tak, to mamy dla Ciebie idealne stanowisko! Jako nasz Kierownik Bezpieczeństwa i Ego na Bramie Siłowni, będziesz odpowiedzialny za kontrolę dostępu, utrzymanie porządku i, co najważniejsze, podbijanie ego każdego, kto próbuje wejść. Wymagamy silnej dłoni do uścisku, zdolności do rozpoznawania bicepsów na odległość i umiejętności wydawania komplementów na temat doskonałej techniki podnoszenia naprawdę ciężkich rzeczy. Dołącz do nas, jeśli czujesz, że jesteś gotowy na zadanie - bramka czeka, a ego też!</li>
+
+      </ul>
+      </div>
+      
+    </div>
+    <div class="prawa">
+      <h3>Wyniki Arnold Strongman Classic 2024</h3>
+      <table>
+        <thead>
+          <tr>
+                <th>Imię i Nazwisko</th>
+                <th>Ilość Punktów</th>
+                <th>Narodowość</th>
+            </tr>
+        </thead>  
+        <tbody>
+          <tr>
+                <td>Mitchell Hooper</td>
+                <td>52</td>
+                <td>Kanada</td>
+            </tr>
+            <tr>
+                <td>Mateusz Kieliszkowski</td>
+                <td>40.5</td>
+                <td>Polska</td>
+            </tr>
+            <tr>
+              <td>Tom Stoltman</td>
+              <td>38.5</td>
+              <td>Szkocja</td>
+            </tr>
+             <tr>
+              <td>Hafthor Bjornsson</td>
+              <td>38</td>
+              <td>Stany Zjednoczone</td>
+            </tr>
+            <tr>
+              <td>Bobby Thompson</td>
+              <td>32</td>
+              <td>Stany Zjednoczone</td>
+            </tr>
+            <tr>
+              <td>Oleksii Novikov</td>
+              <td>25</td>
+              <td>Ukraina</td>
+            </tr>
+            <tr>
+              <td>Evan Singleton</td>
+              <td>24</td>
+              <td>Szkocja</td>
+            </tr>
+            <tr>
+              <td>Martins Licis</td>
+              <td>23</td>
+              <td>Stany Zjednoczone</td>
+            </tr>
+            <tr>
+              <td>Tom Evans</td>
+              <td>10</td>
+              <td>Stany Zjednoczone</td>
+            </tr>
+            <tr>
+              <td>Oskar Źiółkowski</td>
+              <td></td>
+              <td>Polska</td>
+            </tr>
+            <tr>
+              <td>Maxime Boudreault</td>
+              <td>0</td>
+              <td>Kanada</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>
+  <div class = "chudy"><img src="img/jestes_za_chudy.jpg" alt=""></div>    
+  
   </body>
   
 </html>
