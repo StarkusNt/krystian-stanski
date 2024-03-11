@@ -7,15 +7,15 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-image: url('bg.jpg'); /* Dodaj ścieżkę do obrazka */
-  background-size: cover; /* Dopasuj obrazek do całego tła */
-  background-position: center; /* Wyśrodkuj obrazek */
-  color: #001f3f; /* Biały kolor tekstu na tle obrazka */
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #001f3f;
 }
 
 
 #board {
-  display: none; /* Początkowo ukryte */
+  display: none;
   grid-template-columns: repeat(3, 100px);
   gap: 5px;
   margin-top: 20px;
@@ -26,23 +26,23 @@ body {
   width: 100px;
   height: 100px;
   font-size: 24px;
-  border: 1px solid #fff; /* Biały kolor obramowania komórek */
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.2); /* Kolor tła komórek z przezroczystością */
-  transition: background-color 0.3s ease; /* Animacja zmiany koloru tła */
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .cell:hover {
-  background-color: rgba(255, 255, 255, 0.4); /* Kolor tła komórki po najechaniu kursorem */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #mode-info {
   margin-top: 10px;
   font-weight: bold;
-  color: #fff; /* Biały kolor tekstu */
+  color: #fff;
 }
 
 button {
@@ -50,17 +50,17 @@ button {
   padding: 10px;
   margin: 5px;
   cursor: pointer;
-  background-color: #4caf50; /* Zielony kolor przycisków */
-  color: #fff; /* Biały kolor tekstu na przyciskach */
+  background-color: #4caf50;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Animacja zmiany koloru tła przycisków */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049; /* Kolor przycisków po najechaniu kursorem */
+  background-color: #45a049; 
 }
 
 button.active {
-  background-color: #008CBA; /* Kolor przycisku aktywnego trybu */
+  background-color: #008CBA;
 }
