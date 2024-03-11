@@ -13,10 +13,9 @@
       let isPlayingWithBot = false;
       let previousMode = '';
 
-      // Create the game board
       function createBoard() {
-        board.style.display = 'grid'; // Pokaż planszę
-        board.innerHTML = ''; // Wyczyść istniejącą planszę
+        board.style.display = 'grid';
+        board.innerHTML = '';
         for (let i = 0; i < 9; i++) {
           const cell = document.createElement('div');
           cell.className = 'cell';
@@ -24,10 +23,9 @@
           cell.addEventListener('click', handleCellClick);
           board.appendChild(cell);
         }
-        restartButton.disabled = false; // Aktywuj przycisk restart po utworzeniu planszy
+        restartButton.disabled = false;
       }
 
-      // Handle cell click
       function handleCellClick(event) {
         const clickedCell = event.target;
         const cellIndex = clickedCell.dataset.index;
@@ -52,12 +50,11 @@
         }
       }
 
-      // Check for a win
       function checkWin() {
         const winPatterns = [
-          [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-          [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-          [0, 4, 8], [2, 4, 6]             // Diagonals
+          [0, 1, 2], [3, 4, 5], [6, 7, 8],
+          [0, 3, 6], [1, 4, 7], [2, 5, 8],
+          [0, 4, 8], [2, 4, 6]
         ];
 
         return winPatterns.some(pattern =>
@@ -65,7 +62,6 @@
         );
       }
 
-      // Restart the game
       function restartGame() {
         currentPlayer = 'X';
         boardState = ['', '', '', '', '', '', '', '', ''];
@@ -75,7 +71,6 @@
         createBoard(); // Stwórz nową planszę
       }
 
-      // Make a move for the bot
       function makeBotMove() {
         const emptyCells = boardState.reduce((acc, cell, index) => {
           if (cell === '') acc.push(index);
@@ -100,7 +95,6 @@
         }
       }
 
-      // Event listeners
       playWithBotButton.addEventListener('click', () => {
         isPlayingWithBot = true;
         playWithBotButton.classList.add('active');
@@ -130,8 +124,4 @@
         }
         restartGame();
       });
-
-      // Initial board creation
-      // Komentarz, aby plansza była widoczna dopiero po naciśnięciu przycisku
-      // createBoard();
     });
